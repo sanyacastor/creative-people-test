@@ -1,0 +1,16 @@
+@import "./styles/normalize.scss";
+@import "./styles/var.scss";
+@import "./fonts/styles.css";
+@import "./styles/global.scss";
+@import "./styles/components/range-input.scss";
+@import "./styles/components/swiper-slider.scss";
+@import "./styles/components/header.scss";
+@import "./styles/components/hero.scss";
+@import "./styles/components/features.scss";
+@import "./styles/components/cashback.scss";
+@import "./styles/components/calc.scss";
+@import "./styles/components/registration.scss";
+@import "./styles/components/form.scss";
+@import "./styles/components/mobile-bank.scss";
+@import "./styles/components/copyrights.scss";
+@import "./styles/components/terms.scss";

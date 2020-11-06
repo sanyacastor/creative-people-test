@@ -1,0 +1,37 @@
+.copyrights {
+  padding-top: 27px;
+  padding-left: 16px;
+  padding-right: 21px;
+  padding-bottom: 25px;
+
+  font-family: "ALS Hauss", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #55575c;
+}
+
+.copyrights__inner {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.copyrights p {
+  margin: 0;
+  padding: 0;
+  &:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyrights__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copyrights p:nth-child(2) {
+    display: block;
+  }
+}

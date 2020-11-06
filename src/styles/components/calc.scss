@@ -1,0 +1,239 @@
+.calc__inner {
+  padding: 0 16px;
+}
+
+.calc__title {
+  margin-bottom: 15px;
+}
+
+.calc__subtitle {
+  margin-bottom: 15px;
+  font-size: var(--font-size-m);
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
+.slider__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.slider__name {
+  margin: 0;
+  width: 50%;
+  font-family: "ALS Hauss", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.slider__value {
+  margin: 0;
+  width: 50%;
+  text-align: right;
+  font-family: "Navigo", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: right;
+}
+
+.slider--amount {
+  position: relative;
+
+  &::before,
+  &::after {
+    font-family: "ALS Hauss", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a2a4a6;
+  }
+
+  &::before {
+    content: "90 000 ₽";
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+  }
+  &::after {
+    content: "2 000 000 ₽";
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+  }
+}
+
+.slider--time {
+  position: relative;
+  //   margin-bottom: 40px;
+  &::before,
+  &::after {
+    font-family: "ALS Hauss", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a2a4a6;
+  }
+
+  &::before {
+    content: "13 мес.";
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+  }
+  &::after {
+    content: "60 мес.";
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+  }
+}
+
+.credit-request {
+  padding-top: 16px;
+  padding-bottom: 11px;
+  background: var(--color-silver);
+  padding-top: 20px;
+  border-radius: 14px;
+}
+
+.credit-request__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit-request__item {
+  text-align: center;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.credit-request__item-title {
+  font-family: "Navigo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.credit-request__item-subtitle {
+  margin: 0;
+  font-family: "ALS Hauss", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.credit-request__button {
+  margin-top: 15px;
+  margin-bottom: 24px;
+}
+
+.calc__offer {
+  padding: 0 36px;
+  font-family: "ALS Hauss", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #808185;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.calc__offer--desktop {
+  text-align: left;
+  color: #a2a4a6;
+  padding: 0;
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .calc {
+    background: #f4f4f4;
+    padding-top: 72px;
+    padding-bottom: 90px;
+  }
+
+  .calc__subtitle {
+    margin-top: 26px;
+    margin-bottom: 52px;
+  }
+
+  .calc__wrapper {
+    display: flex;
+    max-width: 1010px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .credit-request {
+    display: flex;
+    max-width: 320px;
+    padding-left: 56px;
+    padding-right: 60px;
+    background: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    & > hr {
+      display: none;
+    }
+  }
+  .credit-request__item {
+    text-align: left;
+  }
+
+  .credit-request__item-title {
+    text-align: left;
+  }
+
+  .credit-request__item-subtitle {
+    text-align: left;
+  }
+
+  .credit-request__inner {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .credit-request__button {
+    margin: 0;
+  }
+
+  .calc__sliders {
+    border-right: 1px solid #e1e1e3;
+    flex-grow: 1;
+    padding-left: 60px;
+    padding-right: 57px;
+    max-width: 690px;
+  }
+
+  .calc__offer--mobile {
+    display: none;
+  }
+}

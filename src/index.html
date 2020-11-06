@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Райфайзен Банк | Кредитная карта
+        с кэшбэком</title>
+</head>
+
+<body>
+    <header class="heaader">
+        <div class="header__inner">
+
+            <div class="header__logos">
+                <div class="header__link-item header__link-item--raiff">
+                    <a href="#" class="header__link">
+                        <img src="./images/Raiff_logo.svg" alt="Райфайзен" width="133" height="28">
+                    </a>
+                </div>
+                <div class="header__line"></div>
+                <div class="header__link-item header__link-item--visa">
+                    <a href="#" class="header__link">
+                        <img src="./images/visa_logo.svg" alt="Visa" width="75" height="24">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__contacts">
+                <div class="header__link-item header__link-item--call">
+                    <a href="#" class="header__link header__link--mobile">
+                        <img src="./images/Contacts_icon.svg" alt="Контакты" width="24" height="24">
+                    </a>
+                    <p class="header__text header__text--desktop">
+                        8 800 770-75-62<br>
+                        <span>Бесплатно по России</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__inner">
+            <div class="hero__bage hero__bage--mobile">
+                Обслуживание 0₽
+            </div>
+            <div class="hero__bage hero__bage--desktop">
+                Бесплатное обслуживание
+            </div>
+            <p class="hero__title">
+                Кредитная карта
+                с кэшбэком<br>
+                <span class="hero__accent">
+                    1,5
+                </span>
+            </p>
+            <a href="" class="hero__button button hero__button--desktop">
+                Оформить онлайн
+            </a>
+        </div>
+    </section>
+
+    <a href="" class="hero__button button hero__button--mobile">
+        Оформить онлайн
+    </a>
+
+    <section class="features">
+        <div class="features__inner">
+            <ul class="features__list">
+                <li class="features__list-item">
+                    <div class="feature">
+                        <p class="feature__title">
+                            <span class="feature__accent">1,5</span>%
+                        </p>
+                        <p class="feature__subtitle">кэшбэк рублями</p>
+                    </div>
+                </li>
+                <li class="features__list-item">
+                    <div class="feature">
+                        <p class="feature__title">
+                            <span class="feature__accent">0₽</span>
+                        </p>
+                        <p class="feature__subtitle">обслуживание</p>
+                    </div>
+                </li>
+                <li class="features__list-item features__list-item--mobile">
+                    <div class="feature">
+                        <p class="feature__title">до
+                            <span class="feature__accent">600</span>
+                            тыс. ₽</p>
+                        <p class="feature__subtitle">и 52 дня без %</p>
+                    </div>
+                </li>
+                <li class="features__list-item features__list-item--desktop">
+                    <div class="feature">
+                        <p class="feature__title">до
+                            <span class="feature__accent">600</span>
+                            тыс. ₽</p>
+                        <p class="feature__subtitle">кредитный лимит</p>
+                    </div>
+                </li>
+                <li class="features__list-item features__list-item--desktop">
+                    <div class="feature">
+                        <p class="feature__title">до
+                            <span class="feature__accent">52 дней</span>
+                        <p class="feature__subtitle">без процентов</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+    <section class="cashback">
+        <div class="cashback__inner">
+            <h2 class="cashback__title title">
+                Кэшбэк 1,5%
+                без ограничений
+            </h2>
+            <ul class="cashback__list">
+                <li class="cashback__list-item">
+                    <div class="cashback-card cashback-card--coin">
+                        <p class="cashback-card__title">
+                            Кэшбэк<br>
+                            рублями
+                        </p>
+                        <div class="cashback-card__pic">
+                            <!-- <img src="./images/coin.png" alt=""> -->
+                        </div>
+                    </div>
+                </li>
+                <li class="cashback__list-item">
+                    <div class="cashback-card cashback-card--bag">
+                        <p class="cashback-card__title">
+                            За любые<br>
+                            покупки
+                        </p>
+                        <div class="cashback-card__pic">
+                            <!-- <img src="./images/bag.png" alt=""> -->
+                        </div>
+                    </div>
+                </li>
+                <li class="cashback__list-item">
+                    <div class="cashback-card cashback-card--car">
+                        <p class="cashback-card__title">
+                            Без лимитов<br>
+                            и ограничений
+                        </p>
+                        <div class="cashback-card__pic">
+                            <!-- <img src="./images/car.png" alt=""> -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="calc">
+        <div class="calc__inner">
+            <h2 class="calc__title title">
+                Дополнительный
+                кредит на любые цели
+            </h2>
+            <p class="calc__subtitle subtitle">
+                Получите решение за 2 минуты
+            </p>
+            <div class="calc__wrapper">
+                <div class="calc__sliders">
+                    <div class="slider slider--amount">
+                        <div class="slider__info">
+                            <p class="slider__name">Какая сумма нужна?</p>
+                            <p class="slider__value slider__value--amount">500 000 ₽</p>
+                        </div>
+                        <input type="range" min='90' max='2000' value='500' step='10'
+                            class="slider__input slider__input--amount">
+                    </div>
+                    <div class="slider slider--time">
+                        <div class="slider__info">
+                            <p class="slider__name">На какой срок?</p>
+                            <p class="slider__value slider__value--time">36 мес.</p>
+                        </div>
+                        <input type="range" min='13' max='60' value='36' class="slider__input slider__input--time">
+                    </div>
+                    <p class="calc__offer calc__offer--desktop">
+                        Расчет платежа приведен с учетом финансовой
+                        защиты. Не является офертой.
+                    </p>
+                </div>
+
+
+                <div class="credit-request">
+                    <div class="credit-request__inner">
+                        <div class="credit-request__item">
+                            <span id="creditPersent" class="credit-request__item-title">10,99%</span>
+                            <p class="credit-request__item-subtitle">ваша ставка</p>
+                        </div>
+                        <div class="credit-request__item">
+                            <span id="mouthlyPayment" class="credit-request__item-title">14 265 ₽</span>
+                            <p class="credit-request__item-subtitle">ежемесячный платёж</p>
+                        </div>
+                        <div class="credit-request__item">
+                            <a href="" class="credit-request__button button">
+                                Получить кредит
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="calc__offer calc__offer--mobile">
+                        Расчет платежа приведен с учетом финансовой
+                        защиты. Не является офертой.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="registration__inner">
+            <h2 class="registration__title title">
+                Оформите карту
+                онлайн
+            </h2>
+            <ul class="registration__list steps-list">
+                <li class="steps-list__item">
+                    <div class="step-list__card">
+                        <p class="step-list__text">
+                            Заполните онлайн-заявку.<br>
+                            Это займет не больше 5 минут
+                        </p>
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="step-list__card">
+                        <p class="step-list__text">
+                            Через 2 минуты придет смс<br>
+                            с решением
+                        </p>
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="step-list__card">
+                        <p class="step-list__text">
+                            Получите карту с бесплатной<br>
+                            доставкой или в отделении
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="form__inner">
+            Форма заявки на кредитную карту
+        </div>
+    </section>
+
+    <section class="mobile-bank">
+        <div class="mobile-bank__inner">
+            <h2 class="mobile-bank__title title">
+                Удобный
+                мобильный банк
+            </h2>
+            <p class="mobile-bank__subtitle">
+                Пользуйтесь услугами онлайн
+                без визита в отделение
+            </p>
+            <div class="mobile-bank__slider-wrapper">
+                <div class="mobile-bank__slider slider swiper-container">
+                    <div class="slider__slides swiper-wrapper">
+                        <div class="slider__slide slide swiper-slide">
+                            <div class="slider__slide-inner">
+                                <img src="./images/Phone_Screen0.png" class="slide__img" width="186" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__slide slide swiper-slide">
+                            <div class="slider__slide-inner">
+                                <img src="./images/Phone_Screen1.png" class="slide__img" width="186" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__slide slide swiper-slide">
+                            <div class="slider__slide-inner">
+                                <img src="./images/Phone_Screen2.png" class="slide__img" width="186" alt="">
+
+                            </div>
+                        </div>
+                        <div class="slider__slide slide swiper-slide">
+                            <div class="slider__slide-inner">
+                                <img src="./images/Phone_Screen3.png" class="slide__img" width="186" alt="">
+
+                            </div>
+                        </div>
+                        <div class="slider__slide slide swiper-slide">
+                            <div class="slider__slide-inner">
+                                <img src="./images/Phone_Screen0.png" class="slide__img" width="186" alt="">
+
+                            </div>
+                        </div>
+                        <div class="slider__slide slide swiper-slide">
+                            <div class="slider__slide-inner">
+                                <img src="./images/Phone_Screen1.png" class="slide__img" width="186" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev-uniqe"></div>
+                <div class="swiper-button-next-uniqe"></div>
+            </div>
+            <a href="" class="mobile-bank__button button">
+                Получить кредит
+            </a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="copyrights">
+        <div class="copyrights__inner">
+            <p>© АО «Райффайзенбанк»</p>
+
+            <p>Генеральная лицензия Банка России № 3292 от 17.02.2015.
+                Юридический адрес: 129090, Москва, ул. Троицкая,
+                д. 17, стр. 1
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="terms">
+        <div class="terms__inner">
+            Кэшбэк – возврат средств. Кэшбэк начисляется на любые покупки, совершенные по карте VISA Кэшбэк на всё, в
+            размере 1,5 % от суммы расходной операции. Начисленный за календарный месяц кэшбэк выплачивается рублями на
+            счет
+            клиента в течение 7 рабочих дней после окончания соответствующего календарного месяца. Кэшбэк не начисляется
+            за
+            совершение некоторых видов операций согласно правилам программы, размещенным на сайте raif.ru.<br><br>
+
+            Сроки проведения акции «Бесплатная кредитная карта «Кэшбэк на всё» для существующих и новых клиентов АО
+            «Райффайзенбанк» — с 01.06.20 по 31.08.20. Информация об организаторе акции, о правилах ее проведения,
+            количестве призов или выигрышей по результатам такой акции, сроках, месте и порядке их получения размещена
+            на на
+            raif.ru или по 8 800 770 09 08.<br><br>
+
+            В течение льготного периода до 52 дней, проценты по кредиту не начисляются на безналичные операции при
+            условии
+            своевременного внесения минимальных платежей и полного погашения задолженности последнего отчетного периода.
+            Ставка 19-49% годовых определяется индивидуально по результатам оценки кредитоспособности клиента и
+            категории
+            совершаемых клиентом операций по карте. Лимит кредита возобновляемый 15 000-600 000 руб., срок действия
+            лимита
+            не ограничен сроком действия кредитной карты. Кредитный договор действует до момента исполнения сторонами
+            своих
+            обязательств. Комиссии: за процессинг по картам, подключенным к программе лояльности: не взимается по акции/
+            вне
+            акции 1490 руб. в год по основной карте, 500 рублей в год по дополнительной карте; за выдачу наличных в
+            банкоматах банка и банков-партнеров – 3% от суммы снятия+300 руб/ в иных банкоматах – 3,9 % + 300 руб.; за
+            переводы на карты банка/на карты других банков — 3% от суммы перевода+300 руб.; за квази-кэш-операции—3% от
+            суммы операции + 300 руб.; за сервис «уведомление об операциях» - 60 руб. по основной/45 руб. по
+            дополнительной
+            карте в мес.; за совершение операции за рубежом в валюте, отличной от валюты счета — 1,65% от суммы
+            операции; за
+            внесение наличных денежных средств через кассу банка — 100 руб. (при внесении до 10 000 руб.).Банк принимает
+            решение о предоставлении кредита на основании всей полученной информации и требований к заемщику.
+            Действительно
+            на 01.06.20. АО «Райффайзенбанк» 0+
+        </div>
+    </section>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        // Gallery //
+        const mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }, navigation: {
+                nextEl: '.swiper-button-next-uniqe',
+                prevEl: '.swiper-button-prev-uniqe',
+            },
+            breakpoints: {
+                1160: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+
+                }
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

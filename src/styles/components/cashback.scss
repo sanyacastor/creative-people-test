@@ -1,0 +1,144 @@
+.cashback__inner {
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cashback__title {
+  text-align: center;
+  font-family: "Navigo", sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.cashback__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+  min-width: 343px;
+  transition: all 0.5s ease;
+}
+
+.cashback-card {
+  position: relative;
+}
+
+.cashback-card__pic {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+}
+
+.cashback-card--coin .cashback-card__pic {
+  height: 100px;
+  width: 121px;
+  background: url("../../images/coin.png");
+  background-repeat: no-repeat;
+  background-size: 121px 100px;
+}
+
+.cashback-card--bag .cashback-card__pic {
+  height: 163px;
+  width: 105px;
+  background: url("../../images/bag.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 105px 163px;
+  bottom: 16px;
+}
+
+.cashback-card--car .cashback-card__pic {
+  height: 106px;
+  width: 120px;
+  background: url("../../images/car.png");
+  background-repeat: no-repeat;
+  bottom: 20px;
+  background-size: 120px 106px;
+}
+
+.cashback__list-item {
+  width: 100%;
+  min-height: 140px;
+  background: var(--color-blue);
+  color: #fff;
+  font-family: " ALS Hauss", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  max-width: 550px;
+}
+
+.cashback-card {
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
+@media (min-width: 1400px) {
+  .cashback-card {
+    margin-bottom: 0;
+    min-height: 180px;
+  }
+  .cashback__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cashback__inner {
+    padding-bottom: 90px;
+  }
+
+  .cashback__list-item {
+    max-width: 364px;
+    font-size: 24px;
+  }
+
+  .cashback__title {
+    padding-top: 80px;
+    margin-bottom: 64px;
+  }
+
+  .cashback-card--coin .cashback-card__pic {
+    height: 132px;
+    width: 160px;
+    background: url("../../images/coin.png");
+    background-repeat: no-repeat;
+    background-size: 160px 132px;
+  }
+
+  .cashback-card--bag .cashback-card__pic {
+    height: 203px;
+    width: 131px;
+    background: url("../../images/bag.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 131px 203px;
+  }
+
+  .cashback-card--car .cashback-card__pic {
+    height: 154px;
+    width: 174px;
+    background: url("../../images/car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -40px;
+    background-size: 174px 154px;
+  }
+}

@@ -1,0 +1,48 @@
+.mobile-bank {
+  padding-top: 53px;
+  width: 100%;
+  background: #424548;
+  color: #fff;
+}
+
+.mobile-bank__inner {
+  width: 100%;
+  background: #424548;
+  color: #fff;
+}
+
+.mobile-bank__subtitle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.mobile-bank__button {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .mobile-bank {
+    padding-top: 80px;
+  }
+
+  .mobile-bank__subtitle {
+    margin-bottom: 64px;
+  }
+
+  .mobile-bank__button {
+    display: block;
+  }
+
+  .mobile-bank__inner {
+    padding-bottom: 80px;
+  }
+
+  .mobile-bank__button {
+    max-width: 256px;
+    margin: 0 auto;
+  }
+
+  .mobile-bank__slider {
+    margin-bottom: 0;
+  }
+}

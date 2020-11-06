@@ -1,0 +1,80 @@
+.registration {
+  margin-top: 45px;
+  margin-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.registration__inner {
+  margin: 0 auto;
+  max-width: 964px;
+}
+
+.registration__title {
+  padding-bottom: 32px;
+}
+
+.registration__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-list__text {
+  margin-top: 0;
+}
+
+.steps-list__item {
+  flex-grow: 1;
+  max-width: 270px;
+  padding-left: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    background: url("../../images/doc.svg");
+    left: 0;
+  }
+
+  &:nth-child(2)::before {
+    width: 22px;
+    height: 24px;
+    background: url("../../images/message.svg");
+  }
+  &:nth-child(3)::before {
+    width: 21px;
+    height: 20px;
+    background: url("../../images/hand.svg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .registration {
+    margin-top: 80px;
+  }
+
+  .registration__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .steps-list__item {
+    max-width: 280px;
+  }
+
+  .step-list__text {
+    margin-top: 0;
+    font-size: 16px;
+  }
+}

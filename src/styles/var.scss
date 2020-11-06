@@ -1,0 +1,35 @@
+:root {
+  --color-black: #2b2d33;
+  --color-silver: #f4f4f4;
+  --color-blue: #29476b;
+
+  --color-gray-lite: #a2a4a6;
+  --color-gray: #424548;
+  --color-gray-dark: #2b2d33;
+
+  --color-main: #fee600;
+
+  --media-mobile: 375px;
+  --media-tablet: 780px;
+  --media-desktop: 1400px;
+
+  --font-size-xxxl: 60px;
+  --font-size-xxl: 48px;
+  --font-size-xl: 36px;
+  --font-size-l: 24px;
+  --font-size-m: 18px;
+  --font-size-s: 16px;
+  --font-size-xs: 13px;
+}
+
+@media (max-width: 780px) {
+  :root {
+    --font-size-xxxl: 36px;
+    --font-size-xxl: 30px;
+    --font-size-xl: 24px;
+    --font-size-l: 20px;
+    --font-size-m: 16px;
+    --font-size-s: 14px;
+    --font-size-xs: 12px;
+  }
+}
